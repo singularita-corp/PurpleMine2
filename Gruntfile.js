@@ -33,6 +33,21 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({ browsers: ['last 2 versions'] })
+        ]
+      },
+      dist: {
+        src: 'stylesheets/application.css'
+      },
+      redmine_backlogs: {
+        src: 'plugins/redmine_backlogs/*.css'
+      }
+    },
+
     uglify: {
       build: {
         src: [
@@ -56,10 +71,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  grunt.registerTask('css', ['sass']);
+  grunt.registerTask('css', ['sass', 'postcss']);
   grunt.registerTask('js', ['uglify']);
 
   grunt.registerTask('default', ['css', 'js']);

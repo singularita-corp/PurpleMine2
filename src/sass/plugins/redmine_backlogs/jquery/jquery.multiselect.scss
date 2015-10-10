@@ -84,7 +84,7 @@
         padding-left: 20px + 6px;
         border: 1px solid transparent;
         cursor: default;
-        @include user-select(none);
+        user-select: none;
 
         input {
             position: relative;

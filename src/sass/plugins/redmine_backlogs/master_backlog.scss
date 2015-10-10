@@ -307,6 +307,8 @@ $story-sp-input-width:          50px;
         .menu {
             position: relative;
             height: $header-line-height;
+            transition: background-color 0s .1s,
+                        border-color 0s .1s;
             border-right: 1px solid #888;
             border-bottom: 1px solid $header-bg;
             border-radius: ($border-radius-large - 1px) 0 0;
@@ -314,13 +316,13 @@ $story-sp-input-width:          50px;
             line-height: $line-height-base;
             cursor: pointer;
             overflow: visible;
-            @include transition(background-color 0s .1s, border-color 0s .1s);
 
             &:hover {
+                transition: background-color 0s 0s,
+                            border-color 0s 0s;
                 border-color: $body-bg;
                 background-color: $body-bg;
                 z-index: 1000;
-                @include transition(background-color 0s 0s, border-color 0s 0s);
             }
 
             .icon {
@@ -338,6 +340,7 @@ $story-sp-input-width:          50px;
                 left: -1px;
                 margin: 0;
                 padding: $padding-small-vertical 0;
+                transition: visibility 0s .1s;
                 border: 1px solid $header-bg;
                 border-top-width: 0;
                 border-radius: 0 0 $border-radius-base $border-radius-base;
@@ -346,7 +349,6 @@ $story-sp-input-width:          50px;
                 box-shadow: 0 2px 1px rgba(#000, .1);
                 visibility: hidden;
                 z-index: 999;
-                @include transition(visibility 0s .1s);
 
                 a {
                     color: $gray-darker;
@@ -354,8 +356,8 @@ $story-sp-input-width:          50px;
             }
 
             &:hover .items {
+                transition: visibility 0s 0s;
                 visibility: visible;
-                @include transition(visibility 0s 0s);
             }
 
             .item {
@@ -393,8 +395,8 @@ $story-sp-input-width:          50px;
                     background-color: darken($body-bg, 8%);
 
                     ul {
+                        transition: visibility 0s 0s;
                         visibility: visible;
-                        @include transition(visibility 0s 0s);
                     }
                 }
             }
@@ -766,14 +768,16 @@ $story-sp-input-width:          50px;
         a {
             display: inline-block;
             margin-bottom: 0;
+            transition: background-color ease-in-out .07s,
+                        border-color ease-in-out .07s,
+                        box-shadow ease-in-out .07s;
             border: 1px solid;
             font-weight: $btn-font-weight;
             text-align: center;
             white-space: nowrap;
             cursor: pointer;
+            user-select: none;
             @include button-size($input-padding-vertical, $input-padding-horizontal, $font-size-base, $line-height-base, $border-radius-base);
-            @include user-select(none);
-            @include transition(background-color ease-in-out .07s, border-color ease-in-out .07s, box-shadow ease-in-out .07s);
 
             &.save {
                 @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);

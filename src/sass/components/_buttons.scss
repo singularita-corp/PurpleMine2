@@ -7,14 +7,16 @@ input[type="submit"],
 button {
     display: inline-block;
     margin-bottom: 0;
+    transition: background-color ease-in-out .07s,
+                border-color ease-in-out .07s,
+                box-shadow ease-in-out .07s;
     border: 1px solid;
     font-weight: $btn-font-weight;
     text-align: center;
     white-space: nowrap;
     cursor: pointer;
+    user-select: none;
     @include button-size($btn-padding-vertical, $btn-padding-horizontal, $font-size-base, $line-height-base, $border-radius-base);
-    @include user-select(none);
-    @include transition(background-color ease-in-out .07s, border-color ease-in-out .07s, box-shadow ease-in-out .07s);
     @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 
     &:hover,
@@ -31,7 +33,7 @@ button {
     fieldset[disabled] & {
         pointer-events: none; // Future-proof disabling of clicks
         box-shadow: none;
-        @include opacity(.65);
+        opacity: .65;
     }
 }
 
@@ -122,7 +124,7 @@ a[data-expands],
     background-position: 2px 2px;
     cursor: pointer;
     vertical-align: top;
-    @include user-select(none);
+    user-select: none;
     @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 

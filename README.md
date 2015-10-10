@@ -56,6 +56,10 @@ If you need to customize styles for [Redmine Backlogs][redmine_backlogs] remembe
 
 ## Changelog
 
+Latest (v2.0.0):
+
++ Use autoprefixer with PostCSS
+
 v1.7.0 (2015-09-25):
 
 * Added styles for optgroup (Firefox only)

@@ -8,12 +8,12 @@
 
     #sidebar {
         @if $fixed-layout {
+            transition: margin .5s, opacity .5s;
             opacity: 1;
             will-change: margin, opacity;
-            @include transition(margin .5s, opacity .5s);
         } @else {
+            transition: margin .5s;
             will-change: margin;
-            @include transition(margin .5s);
         }
 
         &.sidebar-hiding {
@@ -33,11 +33,10 @@
     }
 
     .sidebar-toggler {
-        @include user-select(none);
-
         display: block;
         position: absolute;
         top: $toggler-position-v;
+        user-select: none;
 
         @if $use-font-awesome {
             @extend %fa-icon;

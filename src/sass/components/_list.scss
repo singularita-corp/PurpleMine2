@@ -207,7 +207,7 @@ tr {
         background-repeat: no-repeat;
         background-position: center center;
         cursor: pointer;
-        @include user-select(none);
+        user-select: none;
     }
 
     &.open span.expander {
@@ -316,10 +316,10 @@ tr.entry {
                 bottom: 0;
                 left: 5px;
                 height: calc(50% - 2px/2);
+                transform: rotate(-4deg);
+                transition: border-color .1s;
                 border-top: 2px solid rgba($tracker-default-text, .95);
                 content: "";
-                @include rotate(-4deg);
-                @include transition(border-color .1s);
             }
 
             &:hover:after {

@@ -54,7 +54,7 @@ textarea {
     font-family: inherit;
     font-size: $font-size-base;
     line-height: $line-height-base;
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
 select,
@@ -66,12 +66,13 @@ input.editor,
 #col_width input {
     height: $input-height-base;
     padding: $input-padding-vertical $input-padding-horizontal;
+    transition: border-color ease-in-out .1s,
+                box-shadow ease-in-out .1s;
     border: 1px solid $input-border;
     border-radius: $input-border-radius;
     background-color: $input-bg;
     color: $input-color;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
-    @include transition(border-color ease-in-out .1s, box-shadow ease-in-out .1s);
     @include form-control-focus();
     @include placeholder();
 }
@@ -89,6 +90,8 @@ select:-moz-focusring {
 button.ui-multiselect {
     height: $input-height-base;
     padding: $input-padding-vertical $input-padding-horizontal;
+    transition: border-color ease-in-out .1s,
+                box-shadow ease-in-out .1s;
     border: 1px solid $input-border;
     background: $input-bg;
     color: $input-color;
@@ -96,8 +99,7 @@ button.ui-multiselect {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .075);
     cursor: default;
     overflow: hidden;
-    @include transition(border-color ease-in-out .1s, box-shadow ease-in-out .1s);
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 
     &:hover,
     &:focus {
@@ -105,7 +107,7 @@ button.ui-multiselect {
     }
 
     &:active {
-        @include translate(0, 0);
+        transform: translate(0, 0);
     }
 
     &.ui-state-active {
@@ -173,7 +175,7 @@ button.ui-multiselect {
         a {
             padding-left: 5px;
             cursor: pointer;
-            @include user-select(none);
+            user-select: none;
         }
     }
 

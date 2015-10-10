@@ -37,7 +37,7 @@
             } @else {
                 right: $toggler-position-h;
             }
-            @include user-select(none);
+            user-select: none;
 
             @if $use-font-awesome {
                 font-size: 14px;
@@ -187,10 +187,12 @@
     input,
     select {
         margin-left: 5px;
+        transition: color ease-in-out .1s,
+                    background-color ease-in-out .1s,
+                    border-color ease-in-out .1s;
         border-color: darken($header-bg, 15%);
         background: darken($header-bg, 10%);
         color: $header-root;
-        @include transition(color ease-in-out .1s, background-color ease-in-out .1s, border-color ease-in-out .1s);
 
         &:focus {
             border-color: darken($header-bg, 35%);
@@ -239,7 +241,7 @@
             } @else {
                 right: $toggler-position-h;
             }
-            @include user-select(none);
+            user-select: none;
 
             @if $use-font-awesome {
                 font-size: 14px;
@@ -312,8 +314,8 @@
 
             > a {
                 display: block;
+                transition: box-shadow .2s;
                 white-space: nowrap;
-                @include transition(box-shadow .2s);
 
                 @if $main-menu-collapse {
                     padding: $main-menu-padding-vertical $main-menu-padding-horizontal;
