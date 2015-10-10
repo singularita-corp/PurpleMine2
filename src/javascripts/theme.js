@@ -1,7 +1,7 @@
 $(function()
 {
     /* global PurpleMine */
-    "use strict";
+    'use strict';
 
     new PurpleMine.SidebarToggler();
     new PurpleMine.HistoryTabs();
