@@ -2,7 +2,11 @@
 
 A free Redmine theme for modern browsers.
 
-![Screenshot](https://github.com/HolonGlobe/PurpleMine2/raw/master/screenshots/issues-list.png)
+![The MIT License](https://img.shields.io/badge/license-MIT-584492.svg?style=flat-square) [![Release](https://img.shields.io/github/release/mrliptontea/PurpleMine2.svg?style=flat-square)](https://github.com/mrliptontea/PurpleMine2/releases) [![Issues](https://img.shields.io/github/issues/mrliptontea/PurpleMine2.svg?style=flat-square)](https://github.com/mrliptontea/PurpleMine2/issues)
+
+---
+
+![Screenshot](https://github.com/mrliptontea/PurpleMine2/raw/master/screenshots/issues-list.png)
 
 Compatible with Redmine 2.5+ and browsers: IE10+/Edge, latest Firefox and Google Chrome (others were not tested).
 
@@ -20,7 +24,7 @@ It's written in [SCSS]. It uses [normalize.css] and benefits from some parts of 
 
 ## How install it
 
-To install PurpleMine, just download [.zip](https://github.com/HolonGlobe/PurpleMine2/archive/master.zip) and unpack it to your Redmine's `public/themes` folder.
+To install PurpleMine, just download [.zip](https://github.com/mrliptontea/PurpleMine2/archive/master.zip) and unpack it to your Redmine's `public/themes` folder.
 
 Then go to Redmine > Administration > Settings > Display and select PurpleMine2 from the list and save the changes.
 
@@ -113,7 +117,7 @@ v1.4.0 (2015-04-10):
 * Fixed #2: Make sure that `.sort` with Font Awesome icons won't have background image
 * Fixed attachments div's layout for wiki pages
 
-For more details, see [release v1.4.0](https://github.com/HolonGlobe/PurpleMine2/releases/tag/v1.4.0)
+For more details, see [release v1.4.0](https://github.com/mrliptontea/PurpleMine2/releases/tag/v1.4.0)
 
 v1.3.0 (2015-04-01):
 
