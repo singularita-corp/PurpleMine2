@@ -185,6 +185,7 @@
     }
 
     input,
+    button,
     select {
         margin-left: 5px;
         transition: color ease-in-out .1s,
@@ -193,6 +194,7 @@
         border-color: darken($header-bg, 15%);
         background: darken($header-bg, 10%);
         color: $header-root;
+        box-shadow: none;
 
         &:focus {
             border-color: darken($header-bg, 35%);

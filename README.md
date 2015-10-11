@@ -63,6 +63,7 @@ If you need to customize styles for [Redmine Backlogs][redmine_backlogs] remembe
 Latest (v2.0.0):
 
 + Use autoprefixer with PostCSS
++ Quick jump menu replacement with anchor tags (allows you to open a project in a new tab)
 
 v1.7.1 (2015-10-10):
 

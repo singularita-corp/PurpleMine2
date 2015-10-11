@@ -24,6 +24,7 @@ button {
         text-decoration: none;
     }
 
+    &:focus,
     &:active {
         outline: 0;
     }

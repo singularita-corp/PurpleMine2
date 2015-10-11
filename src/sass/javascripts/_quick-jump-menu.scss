@@ -1,0 +1,75 @@
+@if $replace-quick-jump-menu {
+    .quick-jump + #project_quick_jump_box {
+        display: none;
+    }
+
+    #header {
+        .quick-jump {
+            display: inline-block;
+            position: relative;
+            margin-left: 5px;
+
+            &__toggle {
+                min-width: 15em;
+                margin: 0;
+                padding-right: $btn-padding-horizontal * 1.5;
+                text-align: justify;
+
+                @if $use-font-awesome {
+                    &:after {
+                        @include fa-icon();
+                        width: $btn-padding-horizontal * 1.5;
+                        margin-top: $btn-padding-vertical;
+                        margin-right: -$btn-padding-horizontal * 1.5;
+                        float: right;
+                        content: $fa-var-caret-down;
+                    }
+                } @else {
+                    background-repeat: no-repeat;
+                    background-position: right 5px center;
+                    @extend %image-arrow-down;
+                }
+            }
+
+            &__dropdown {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 1px;
+                left: 1px;
+                max-height: 80vh;
+                padding: 1px 0;
+                border-radius: $border-radius-base;
+                background: $body-bg;
+                overflow: auto;
+                z-index: 1000;
+                @include nice-shadow(2);
+
+                &.open {
+                    display: block;
+                }
+            }
+        }
+
+        .dropdown-item {
+            margin: 1px 2px;
+            list-style-type: none;
+
+            > a {
+                display: block;
+                padding: 2px $btn-padding-horizontal;
+                border-radius: $border-radius-small;
+                color: $link-color;
+                @include text-overflow;
+
+                &:focus,
+                &:hover {
+                    outline: 0;
+                    background: $component-active-bg;
+                    color: $component-active-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
