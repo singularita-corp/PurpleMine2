@@ -65,6 +65,11 @@ Latest (v2.0.0):
 + Use autoprefixer with PostCSS
 + Quick jump menu replacement with anchor tags (allows you to open a project in a new tab)
 
+v1.7.2 (2015-10-12):
+
+* Fixed `.pagination` float in project members settings
+* Lists' cells are aligned to center by default (as in Redmine's default theme)
+
 v1.7.1 (2015-10-10):
 
 + Improved styling for [Stuff To Do][stuff_to_do] plugin
