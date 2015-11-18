@@ -181,7 +181,4 @@ Initial version
 [redmine_backlogs]: https://github.com/backlogs/redmine_backlogs
 [redmine_time_tracker]: https://github.com/hicknhack-software/redmine_time_tracker
 [redmine_crm_people]: http://www.redminecrm.com/projects/people/
-<<<<<<< HEAD
-=======
 [stuff_to_do]: https://github.com/raafael911/stuff_to_do_plugin
->>>>>>> master
