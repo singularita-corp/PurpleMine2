@@ -33,7 +33,6 @@ table.list {
         padding: $table-cell-padding;
         border: 1px solid $table-border-color;
         border-width: $table-list-item-border;
-        text-align: center;
         vertical-align: top;
 
         &.checkbox {
@@ -132,7 +131,6 @@ tr.project {
 }
 
 tr.issue {
-    text-align: center;
     white-space: nowrap;
 
     .string,
@@ -231,25 +229,10 @@ tr.entry {
 
         &.filename {
             width: 30%;
-            text-align: left;
         }
 
         &.filename_no_report {
             width: 70%;
-            text-align: left;
-        }
-
-        &.size {
-            text-align: right;
-        }
-
-        &.revision,
-        &.author {
-            text-align: center;
-        }
-
-        &.age {
-            text-align: right;
         }
     }
 
@@ -400,7 +383,6 @@ tr.group {
         background-color: $brand-primary;
         color: $brand-text;
         font-size: $font-size-small;
-        text-align: center;
     }
 }
 
@@ -414,8 +396,6 @@ tr.group {
  */
 
 tr.time-entry {
-    text-align: center;
-
     td.project,
     td.spent_on,
     td.activity {
@@ -465,17 +445,6 @@ tr.time-entry {
 }
 
 /**
- * Wiki page history entry
- */
-
-tr.wiki-page-version {
-    td.updated_on,
-    td.author {
-        text-align: center;
-    }
-}
-
-/**
  * Project versions list
  */
 
@@ -492,7 +461,6 @@ tr.version {
         &.date,
         &.status,
         &.sharing {
-            text-align: center;
             white-space: nowrap;
         }
     }
@@ -584,6 +552,5 @@ table.files {
     td.tick,
     td.reorder {
         width: 15%;
-        text-align: center;
     }
 }
