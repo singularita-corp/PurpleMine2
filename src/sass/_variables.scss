@@ -36,9 +36,9 @@ $gray-light:                    lighten($gray-base, 17%) !default;
 $gray-lighter:                  lighten($gray-base, 35%) !default;
 $gray-lightest:                 lighten($gray-base, 46%) !default;
 
-$brand-primary:                 #584492 !default;
+$brand-primary:                 #53565b !default;
 $brand-text:                    #fff !default;
-$brand-accent:                  #deddef !default;
+$brand-accent:                  #efefef !default;
 
 $brand-success:                 #019851 !default;
 $brand-info:                    #409ae3 !default;
@@ -57,7 +57,7 @@ $state-danger:                  #f7a6a4 !default;
 $body-bg:                       #fff !default;
 $text-color:                    $gray-dark !default;
 
-$link-color:                    #4183c4 !default;
+$link-color:                    #0099d3 !default;
 $link-hover-color:              darken($link-color, 10%) !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
